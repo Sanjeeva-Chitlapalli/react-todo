@@ -1,0 +1,19 @@
+1.1{
+    Login
+    welcome{
+        dynamic user-count 
+    }
+    todo{
+        input
+        profile name
+        log-out option
+        list of active and completed todo
+        done todo
+        del todo
+        add todo
+    }
+}
+1.2{
+    auth
+    (Time)
+}
