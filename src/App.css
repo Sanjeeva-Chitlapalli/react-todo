@@ -1,275 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+
 .App {
-    text-align: center;
+  align-items: center;
+  justify-content: center;
 }
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
 body {
-    background-image: url("static/34323.jpg")
+  background-image: url("static/34323.jpg");
+  color: aliceblue;
+}
+.title h1 {
+  color: #fafafa;
+  text-align: center;
+  margin: 30px 0;
+  font-family:  sans-serif;
+  font-weight: 700;
+}
+form {
+  max-width: 500px;
+  color: white;
+  margin: 0 auto;
+  background: transparent;
+  padding: 10px 20px;
+  margin-top: 50px;
+  border-radius: 5px;
+
+}
+form h3 {
+  text-align: center;
+  color:white
+}
+form input {
+  
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #fd9917;
+  outline: none;
+  width: 440px;
+  background: transparent;
+  color: #fff;
+}
+.input_container {
+  margin-bottom: 20px;
+
+}
+.btn_container {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.btn_container button {
+  background: linear-gradient(
+    90deg,
+    rgb(255, 111, 0) 0%,
+    rgb(250, 233, 0) 100%);
+  color: white;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+.todo_container {
+  width: 50%;
+  margin: 0 auto;
 }
-
-.login {
-    background-image: url(https://media.istockphoto.com/vectors/businesswoman-checklist-successful-woman-checking-task-success-vector-id1136652082?k=20&m=1136652082&s=612x612&w=0&h=2mPuwBMV5eMKkJnqDYoH6Vq7uhBtJmvzUFJ1bkWrkCk=);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff;
-    font-family: 'Muli', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+.todo {
+  margin-top: 20px;
+  background: linear-gradient(
+    90deg,
+    rgb(253, 0, 0) 0%,
+    rgb(0, 0, 0) 100%
+  );
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
-.bodyy {
-    background-image: url(https://static.vecteezy.com/system/resources/previews/004/485/590/original/woman-manager-prioritizing-tasks-in-to-do-list-woman-taking-notes-planning-his-work-underlining-important-points-illustration-for-agenda-checklist-management-efficiency-concept-vector.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    color: #fff;
-    font-family: 'Muli', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+.todo input {
+  color:white;
+  cursor: pointer;
+  width: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 28px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
 }
-
-.container {
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgb(148, 139, 228, 1.0);
-    /* Black w/opacity/see-through */
-    padding: 20px 40px;
-    border-radius: 5px;
-    margin-left: 700pt;
-    top: 80px;
-    right: 0;
+.todo input::placeholder {
+  color: #e2e2e2;
 }
-
-.containerr {
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgb(155, 208, 249);
-    /* Black w/opacity/see-through */
-    padding: 50px 40px;
-    border-radius: 5px;
-    margin-left: 600pt;
-    top: 7px;
-    right: 0;
+.button-complete,
+.button-delete,
+.button-edit {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
 }
-
-.container h1 {
-    text-align: center;
-    margin-bottom: 30px;
+#i {
+  font-size: 35px;
 }
-
-.container a {
-    text-decoration: none;
-    color: rgb(241, 97, 157);
+.button-complete {
+  color: #00ff22;
+  margin-right: 10px;
 }
-
-.btn {
-    display: inline-block;
-    width: 100%;
-    cursor: pointer;
-    background-color: rgb(241, 97, 157);
-    padding: 15px;
-    font-family: inherit;
-    font-size: 16px;
-    border: 0;
-    border-radius: 5px;
+.button-edit {
+  color: #00b7ff;
+  margin-right: 10px;
 }
-
-.btn:focus {
-    outline: 0;
+.button-delete {
+  color: rgb(255, 255, 255);
 }
-
-.btn:active {
-    transform: scale(0.98);
-}
-
-.btn1 {
-    display: inline-block;
-    width: 100%;
-    cursor: pointer;
-    background-color: rgb(92, 146, 175);
-    padding: 15px;
-    font-family: inherit;
-    font-size: 16px;
-    border: 0;
-    border-radius: 5px;
-}
-
-.btn1:focus {
-    outline: 0;
-}
-
-.btn1:active {
-    transform: scale(0.98);
-}
-
-.text {
-    margin-top: 30px;
-}
-
-.form-control {
-    position: relative;
-    margin: 20px 0 40px;
-    width: 300px;
-}
-
-.form-control input {
-    background-color: transparent;
-    border: 0;
-    border-bottom: 2px solid #fff;
-    display: block;
-    width: 100%;
-    padding: 15px 0 10px 0;
-    font-size: 18px;
-    color: rgb(255, 255, 255);
-}
-
-.form-control input:focus,
-.form-control input:valid {
-    outline: 0;
-    border-bottom-color: rgb(241, 97, 157);
-}
-
-.form-control label {
-    position: absolute;
-    top: 15px;
-    left: 0;
-}
-
-.form-control label span {
-    display: inline-block;
-    font-size: 18px;
-    min-width: 5px;
-    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.form-control input:focus+label span,
-.form-control input:valid+label span {
-    color: rgb(241, 97, 157);
-    transform: translateY(-30px);
-}
-
-.todo-app {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    width: 520px;
-    min-height: 600px;
-    background: #ff0202;
-    text-align: center;
-    margin: 128px auto;
-    border-radius: 10px;
-    padding-bottom: 32px;
-}
-
-h1 {
-    margin: 32px 0;
-    color: #fff;
-    font-size: 24px;
-}
-
-.complete {
-    text-decoration: line-through;
-    opacity: 0.4;
-}
-
-.todo-form {
-    margin-bottom: 32px;
-}
-
-.todo-input {
-    padding: 14px 32px 14px 16px;
-    border-radius: 4px 0 0 4px;
-    border: 2px solid #fd9917;
-    outline: none;
-    width: 320px;
-    background: transparent;
-    color: #fff;
-}
-
-.todo-input::placeholder {
-    color: #e2e2e2;
-}
-
-.todo-button {
-    padding: 16px;
-    border: none;
-    border-radius: 0 4px 4px 0;
-    cursor: pointer;
-    outline: none;
-    background: linear-gradient( 90deg, rgb(255, 111, 0) 0%, rgb(250, 233, 0) 100%);
-    color: #fff;
-    text-transform: capitalize;
-}
-
-.todo-input.edit {
-    border: 2px solid #000000;
-}
-
-.todo-button.edit {
-    background: linear-gradient( 90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
-    padding: 16px 22px;
-}
-
-.todo-container {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-}
-
-.todo-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 4px auto;
-    color: #fff;
-    background: linear-gradient( 90deg, rgba(255, 118, 20, 1) 0%, rgb(0, 0, 0) 100%);
-    padding: 16px;
-    border-radius: 5px;
+@media screen and (max-width: 667px) {
+  .task_container {
     width: 90%;
+  }
+  .task {
+    margin-right: 0px;
+  }
 }
-
-.todo-row:nth-child(4n+1) {
-    background: linear-gradient( 90deg, rgb(255, 21, 0) 0%, rgb(0, 0, 0) 100%);
-}
-
-.todo-row:nth-child(4n+2) {
-    background: linear-gradient( 90deg, rgb(255, 118, 20, 1) 0%, rgb(0, 0, 0) 100%);
-}
-
-.todo-row:nth-child(4n+3) {
-    background: linear-gradient( 90deg, rgb(252, 17, 17) 0%, rgb(0, 0, 0) 90%);
-}
-
-.icons {
-    display: flex;
-    align-items: center;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-.delete-icon {
-    margin-right: 5px;
-    color: #fff;
-}
-
-.edit-icon {
-    color: #fff;
+input:focus,
+button:focus {
+  outline: none;
 }

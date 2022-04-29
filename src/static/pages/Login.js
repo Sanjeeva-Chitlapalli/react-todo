@@ -15,7 +15,7 @@ const Login=()=>{
             email : event.target.value,
             password:userInput.password
         })
-          
+
 
     }
     const handlePassword=(event)=>{
@@ -26,7 +26,7 @@ const Login=()=>{
     }
 
     const handleClick=(event)=>{
-        if (userInput.email=="user@gmail.com" && userInput.password=="Password"){
+        if (userInput.email==="user@gmail.com" && userInput.password==="Password"){
             const log=() => navigate('/todolist')
                 log();
         }
@@ -69,7 +69,7 @@ const Login=()=>{
         
       </div>
       <button class="btn" onClick={handleClick}>Login</button>
-      <p class="text" onClick={() => navigate('/Home')}>Don't have an account? <a href="#">Register</a></p>
+      <p class="text" onClick={() => navigate('/Home')}>Don't have an account? Register</p>
     </form>
   </div>
   <script src="js.js"></script>
